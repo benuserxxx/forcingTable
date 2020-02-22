@@ -1,0 +1,155 @@
+td,th{
+    padding:5px;
+}
+.set-table-fixed .fixedFoot tr:nth-last-child(1) .fixedColum:before {
+    content: "";
+    background-color: #f1f1f1;
+    position: absolute;
+    top: -19px;
+    width: 100%;
+    height: 18px;
+    left: 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+.blocker-left-bottom{
+    background-color: #ffffff;
+    position: absolute;
+    top: -1px;
+    height: 100%;
+    width: 18px;
+    right: 0;
+    border-bottom: 0;
+}
+.set-table-fixed table{
+    border:0;
+}
+.set-table-fixed tfoot th,
+.set-table-fixed tbody tr:nth-last-child(1) td{
+    border-bottom:1px solid #CCCCCC;
+}
+
+.set-table-fixed,
+.border-fine td,
+.border-fine th{
+    border-left: 1px solid #CCCCCC;
+}
+.border-fine td,
+.border-fine th{
+    border-top:1px solid #CCCCCC;
+}
+.border-fine,
+.border-fine thead th{
+    border-bottom:1px solid #CCCCCC;
+}
+.border-fine,
+.border-fine thead th,
+.border-fine td,
+.set-table-fixed:after{
+    border-color: #CCCCCC !important;
+}
+.set-table-fixed:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: white;
+    right: 16px;
+    z-index: 10;
+    border-left: 1px solid #d8d8d8;
+    top: 0;
+}
+.border-fine tbody tr:nth-child(1) td{
+    border-top:0;
+}
+.border-fine tbody tr td:nth-child(1),
+.border-fine tfoot tr th:nth-child(1),
+.border-fine thead tr th:nth-child(1){
+    border-left:0 !important;
+}
+
+.set-table-fixed *{
+    box-sizing:border-box;
+}
+
+.set-table-fixed .fix-margin-thead,
+.set-table-fixed .fix-margin-thead-after{
+    position: absolute;
+    width: 17px;
+    background: white;
+    right: 0;
+    z-index: 9;
+}
+.set-table-fixed .fix-margin-thead-after{
+    bottom:0;
+}
+
+.set-table-fixed table{
+    width:100%;
+    height:250px;
+    display:block;
+    overflow:scroll;
+}
+table tr td,table tr th{
+    word-wrap:break-word;
+}
+.set-table-fixed{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.fixedColum,
+.set-table-fixed tbody td.fixedColumChild{
+    background: #ff4c4c;
+    color: #fff;
+}
+.set-table-fixed tbody,
+.set-table-fixed thead,
+.set-table-fixed tfoot tr,
+.set-table-fixed tbody tr{
+    display:block;
+    width:100%;
+}
+.set-table-fixed thead,
+.set-table-fixed tfoot{
+    width:calc(100% - 17px);
+}
+.set-table-fixed tbody tr,
+.set-table-fixed thead tr,
+.set-table-fixed tfoot tr{
+    display:flex;
+}
+
+.set-table-fixed thead{
+    position:absolute;
+}
+.set-table-fixed table::-webkit-scrollbar {
+    width: 17px;
+}
+
+/* Track */
+.set-table-fixed table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.set-table-fixed table::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.set-table-fixed table::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.preloadingTable{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    background: #fbfbfb;
+    z-index: 99;
+    border: 1px solid black;
+    border-left: 0;
+}
